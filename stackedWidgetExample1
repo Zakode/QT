@@ -1,0 +1,54 @@
+import sys
+from functools import partial
+from PyQt5 import QtWidgets,QtCore
+
+class MainWindow(QtWidgets.QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.center_widget = QtWidgets.QStackedWidget()
+        self.setCentralWidget(self.center_widget)
+        self.FirstUI()
+        self.SecondUI()
+        self.ThirdUI()
+
+    def FirstUI(self):
+        widget = QtWidgets.QWidget()
+        self.btn1 = QtWidgets.QPushButton('test1', widget)
+        self.btn1.move(50, 50)
+
+        self.center_widget.addWidget(widget)
+        self.btn1.clicked.connect(partial(self.center_widget.setCurrentIndex, 1))
+
+    def SecondUI(self):
+        widget = QtWidgets.QWidget()
+        lay = QtWidgets.QVBoxLayout(widget)
+
+        self.txt1 = QtWidgets.QLineEdit('Saisir le texte ici')
+        self.btn2 = QtWidgets.QPushButton('APPUYER ICI')
+        self.label = QtWidgets.QLabel('Text')
+
+        lay.addWidget(self.txt1)
+        lay.addWidget(self.label)
+        lay.addWidget(self.btn2)
+
+        self.center_widget.addWidget(widget)
+        self.btn2.clicked.connect(partial(self.center_widget.setCurrentIndex, 2))
+
+    def ThirdUI(self):
+        widget = QtWidgets.QWidget()
+        lay = QtWidgets.QVBoxLayout(widget)
+        self.btn3 = QtWidgets.QPushButton('Another button to close')
+        lay.addWidget(self.btn3)
+
+        self.center_widget.addWidget(widget)
+        self.btn3.clicked.connect(self.close)
+    
+    def closeIt(self): 
+        self.close()
+
+if __name__ == '__main__':
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    w = MainWindow()
+    w.show()
+    sys.exit(app.exec_())
