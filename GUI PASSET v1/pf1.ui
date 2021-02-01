@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ZAKPF</class>
+ <widget class="QMainWindow" name="ZAKPF">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1577</width>
+    <height>887</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>CrossCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>GETITBABE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../fitec/Téléchargements/stocks.jpg</normaloff>../fitec/Téléchargements/stocks.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(35, 40, 3, 255), stop:0.16 rgba(136, 106, 22, 255), stop:0.225 rgba(166, 140, 41, 255), stop:0.285 rgba(204, 181, 74, 255), stop:0.345 rgba(235, 219, 102, 255), stop:0.415 rgba(245, 236, 112, 255), stop:0.52 rgba(209, 190, 76, 255), stop:0.57 rgba(187, 156, 51, 255), stop:0.635 rgba(168, 142, 42, 255), stop:0.695 rgba(202, 174, 68, 255), stop:0.75 rgba(218, 202, 86, 255), stop:0.815 rgba(208, 187, 73, 255), stop:0.88 rgba(187, 156, 51, 255), stop:0.935 rgba(137, 108, 26, 255), stop:1 rgba(35, 40, 3, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>1591</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(8, 0, 0, 102);
+font: 63 11pt &quot;URW Gothic&quot;;</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'URW Gothic'; font-size:11pt; font-weight:56; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:26pt; font-weight:600; color:#eeeeec;&quot;&gt;The golden gates&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>770</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(232, 226, 206, 200);</string>
+    </property>
+    <property name="text">
+     <string>Refresh PF</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton2">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>770</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(232, 226, 206, 200);</string>
+    </property>
+    <property name="text">
+     <string>Inspect PF</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="CAC40">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>72</y>
+      <width>256</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 226, 62, 244), stop:1 rgba(255, 255, 255, 255));
+
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;CAC 40 &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="NASDAQ">
+    <property name="geometry">
+     <rect>
+      <x>274</x>
+      <y>72</y>
+      <width>256</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(245, 245, 232, 235);
+font: 75 11pt &quot;Umpush&quot;;</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Umpush'; font-size:11pt; font-weight:72; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-weight:600;&quot;&gt;NASDAQ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="freshness">
+    <property name="geometry">
+     <rect>
+      <x>798</x>
+      <y>72</y>
+      <width>311</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(245, 245, 232, 235);</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;red if freshness - now &amp;gt; 1 min&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="SP500">
+    <property name="geometry">
+     <rect>
+      <x>536</x>
+      <y>72</y>
+      <width>256</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(245, 245, 232, 235);</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;S&amp;amp;P500&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="histopf">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>71</y>
+      <width>451</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(245, 245, 232, 235);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton3">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>770</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(232, 226, 206, 200);</string>
+    </property>
+    <property name="text">
+     <string>Get setimental</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton4">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>770</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(232, 226, 206, 200);</string>
+    </property>
+    <property name="text">
+     <string>Hot trends</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="boton5">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>770</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(232, 226, 206, 200);</string>
+    </property>
+    <property name="text">
+     <string>Market today</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="panel2">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>540</y>
+      <width>451</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(245, 245, 232, 235);</string>
+    </property>
+   </widget>
+   <widget class="QDateTimeEdit" name="ParisTime">
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>20</y>
+      <width>118</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(238, 238, 236);
+border-color: rgb(237, 212, 0);
+font: 75 11pt &quot;Umpush&quot;;</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="pfhtml">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>1101</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #16bffd -webkit-linear-gradient(to right, #16bffd, #cb3066) linear-gradient(to right, #16bffd, #cb3066)</string>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="totalAssets">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>531</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="totalPF">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>770</y>
+      <width>451</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="summury">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>290</y>
+      <width>451</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(245, 245, 232, 235);</string>
+    </property>
+   </widget>
+   <zorder>textEdit</zorder>
+   <zorder>boton1</zorder>
+   <zorder>boton2</zorder>
+   <zorder>CAC40</zorder>
+   <zorder>NASDAQ</zorder>
+   <zorder>freshness</zorder>
+   <zorder>SP500</zorder>
+   <zorder>histopf</zorder>
+   <zorder>boton3</zorder>
+   <zorder>boton4</zorder>
+   <zorder>boton5</zorder>
+   <zorder>panel2</zorder>
+   <zorder>ParisTime</zorder>
+   <zorder>totalAssets</zorder>
+   <zorder>totalPF</zorder>
+   <zorder>pfhtml</zorder>
+   <zorder>totalPF</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1577</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuhello">
+    <property name="title">
+     <string>PF</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="checkPEA"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="checkCT"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuNews">
+    <property name="title">
+     <string>News</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionmedia"/>
+    <addaction name="actionmail"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuhello"/>
+   <addaction name="menuNews"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="checkPEA">
+   <property name="icon">
+    <iconset>
+     <normaloff>../fitec/Téléchargements/fr gold.jpg</normaloff>../fitec/Téléchargements/fr gold.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>FR</string>
+   </property>
+  </action>
+  <action name="actionUS">
+   <property name="text">
+    <string>US</string>
+   </property>
+  </action>
+  <action name="checkCT">
+   <property name="icon">
+    <iconset>
+     <normaloff>../fitec/Téléchargements/usgold.jpg</normaloff>../fitec/Téléchargements/usgold.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>US</string>
+   </property>
+  </action>
+  <action name="actionmedia">
+   <property name="text">
+    <string>media</string>
+   </property>
+  </action>
+  <action name="actionmail">
+   <property name="text">
+    <string>mail</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

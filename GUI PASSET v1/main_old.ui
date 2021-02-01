@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1201</width>
+    <height>894</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(8, 0, 0, 102);\nfont: 11pt &quot;Liberation Serif&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="qotd">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1121</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(211, 215, 207);
+font: 11pt &quot;Liberation Serif&quot;;
+background-color: rgba(0, 0, 0, 148);</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Liberation Serif'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:20pt; font-weight:600; font-style:italic;&quot;&gt;INSERT QOTD&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>90</y>
+      <width>531</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+border-radius:5px;</string>
+    </property>
+    <widget class="widgetSummury" name="pageSummury"/>
+    <widget class="widgetPEA" name="pagePEA"/>
+    <widget class="widgetCT" name="pageCT"/>
+   </widget>
+   <widget class="QTextEdit" name="freshness">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>231</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+border: none;
+border-radius: 5px;
+color: rgb(255, 255, 255);
+font: 14pt &quot;Liberation Serif&quot;;
+</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Liberation Serif'; font-size:14pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Freshness&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshButon">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:
+qlineargradient(spread:pad,x1:0,x2:1, y1:0, y2:1,
+stop: 0 rgba(130,130,130,255),
+stop: 0.495 rgba(0,0,0,255),
+stop: 0.505 rgba(0,0,0,255),
+stop: 1 rgba(200,200,200,255));
+
+border: none;
+border-radius: 25px;
+color: rgb(255, 255, 255);
+font: 13pt &quot;Liberation Serif&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Refresh Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="goToCTButon">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>450</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:
+qlineargradient(spread:pad,x1:0,x2:1, y1:0, y2:1,
+stop: 0 rgba(13,13,13,255),
+stop: 0.2 rgba(150,10,199,255),
+stop: 0.3 rgba(250,20,199,255),
+stop: 0.5 rgba(250,200,255,255),
+stop: 0.65 rgba(205,200,199,255),
+stop: 0.75 rgba(155,190,199,255),
+stop: 1 rgba(20,20,25,255));
+
+color: rgb(0, 0, 0);
+border: none;
+border-radius: 25px;
+font: 13pt &quot;Liberation Serif&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>CT</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>120</y>
+      <width>271</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>190</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber_2">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>300</y>
+      <width>171</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber_3">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>420</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="goToPEAButon">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>450</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:
+qlineargradient(spread:pad,x1:0,x2:1, y1:0, y2:1,
+stop: 0 rgba(0,0,250,255),
+stop: 0.1 rgba(11,11,40,255),
+stop: 0.3 rgba(10,100,255,255),
+stop: 0.4 rgba(19,200,255,255),
+stop: 0.42 rgba(180,200,255,255),
+
+stop: 0.51 rgba(255,255,255,255),
+
+
+stop: 0.7 rgba(255,0,0,255),
+stop: 0.79 rgba(250,18,18,255),
+stop: 0.83 rgba(200,9,10,255),
+stop: 0.9 rgba(220,5,5,255),
+stop: 1 rgba(10,20,20,255));
+
+border: none;
+border-radius: 25px;
+color: rgb(0, 0, 0);
+font: 13pt &quot;Liberation Serif&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>PEA</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="goToCTButon_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:
+qlineargradient(spread:pad,x1:0,x2:1, y1:0, y2:1,
+stop: 0 rgba(0,0,0,255),
+stop: 0.5 rgba(255,255,200,255),
+stop: 0.8 rgba(255,255,255,255),
+stop: 0.9 rgba(20,20,20,255));
+
+color: rgb(0, 0, 0);
+border: none;
+border-radius: 25px;
+font: 13pt &quot;Liberation Serif&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Summury</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1201</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>widgetCT</class>
+   <extends>QWidget</extends>
+   <header>pages/pageCT</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>widgetPEA</class>
+   <extends>QWidget</extends>
+   <header>pages/pagePEA</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>widgetSummury</class>
+   <extends>QWidget</extends>
+   <header>pages/pageSummury</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
