@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>559</width>
+    <height>372</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="homebutton">
+        <property name="styleSheet">
+         <string notr="true">background-color:
+qlineargradient(spread:pad,x1:0,x2:1, y1:0, y2:1,
+stop: 0 rgba(13,13,13,255),
+stop: 0.2 rgba(150,10,199,255),
+stop: 0.3 rgba(250,20,199,255),
+stop: 0.5 rgba(250,200,255,255),
+stop: 0.65 rgba(205,200,199,255),
+stop: 0.75 rgba(155,190,199,255),
+stop: 1 rgba(20,20,25,255));
+
+color: rgb(0, 0, 0);
+border: none;
+border-radius: 10px;
+font: 13pt &quot;Liberation Serif&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>Home</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="statusbutton">
+        <property name="styleSheet">
+         <string notr="true">background-color:
+qlineargradient(spread:pad,x1:0,x2:1, y1:0, y2:1,
+stop: 0 rgba(0,0,0,255),
+stop: 0.5 rgba(255,255,200,255),
+stop: 0.8 rgba(255,255,255,255),
+stop: 0.9 rgba(20,20,20,255));
+
+color: rgb(0, 0, 0);
+border: none;
+border-radius: 25px;
+font: 13pt &quot;Liberation Serif&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>Status</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="tempbutton">
+        <property name="styleSheet">
+         <string notr="true">background-color:
+qlineargradient(spread:pad,x1:0,x2:1, y1:0, y2:1,
+stop: 0 rgba(0,0,0,255),
+stop: 0.5 rgba(255,255,200,255),
+stop: 0.8 rgba(255,255,255,255),
+stop: 0.9 rgba(20,20,20,255));
+
+color: rgb(0, 0, 0);
+border: none;
+border-radius: 25px;
+font: 13pt &quot;Liberation Serif&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>Temp</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="energybutton">
+        <property name="styleSheet">
+         <string notr="true">background-color:
+qlineargradient(spread:pad,x1:0,x2:1, y1:0, y2:1,
+stop: 0 rgba(0,0,0,255),
+stop: 0.5 rgba(255,255,200,255),
+stop: 0.8 rgba(255,255,255,255),
+stop: 0.9 rgba(20,20,20,255));
+
+color: rgb(0, 0, 0);
+border: none;
+border-radius: 25px;
+font: 13pt &quot;Liberation Serif&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>Energy</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color:qlineargradient(spread:pad,x1:0,x2:1, y1:0, y2:1,
+stop: 0 rgba(130,130,130,255),
+stop: 0.495 rgba(0,0,0,255),
+stop: 0.505 rgba(0,0,0,255),
+stop: 1 rgba(200,200,200,255));
+
+border: none;
+border-radius: 25px;
+color: rgb(255, 255, 255);
+font: 13pt &quot;Liberation Serif&quot;;</string>
+      </property>
+      <widget class="HomeWidget" name="homepage"/>
+      <widget class="StatusWidget" name="statuspage"/>
+      <widget class="FanWidget" name="fanpage"/>
+      <widget class="EnergyWidget" name="energypage"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>559</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>StatusWidget</class>
+   <extends>QWidget</extends>
+   <header>pages/statuspage</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FanWidget</class>
+   <extends>QWidget</extends>
+   <header>pages/fanpage</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>EnergyWidget</class>
+   <extends>QWidget</extends>
+   <header>pages/energypage</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>HomeWidget</class>
+   <extends>QWidget</extends>
+   <header>pages/homepage</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
